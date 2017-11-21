@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "mattermost-redux@github:mattermost/mattermost-redux#release-3.7",
+        "scope": null,
+        "escapedName": "mattermost-redux",
+        "name": "mattermost-redux",
+        "rawSpec": "github:mattermost/mattermost-redux#release-3.7",
+        "spec": "github:mattermost/mattermost-redux#release-3.7",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:mattermost/mattermost-redux.git#release-3.7",
+          "sshUrl": "git+ssh://git@github.com/mattermost/mattermost-redux.git#release-3.7",
+          "httpsUrl": "git+https://github.com/mattermost/mattermost-redux.git#release-3.7",
+          "gitUrl": "git://github.com/mattermost/mattermost-redux.git#release-3.7",
+          "shortcut": "github:mattermost/mattermost-redux#release-3.7",
+          "directUrl": "https://raw.githubusercontent.com/mattermost/mattermost-redux/release-3.7/package.json"
+        }
+      },
+      "/Users/macbook/Downloads/mattermost-mobile-master"
+    ]
+  ],
+  "_from": "git://github.com/mattermost/mattermost-redux.git#6e703d005941246a17e1ba0b3245e0a740620ed7",
+  "_id": "mattermost-redux@0.0.1",
+  "_inCache": true,
+  "_location": "/mattermost-redux",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "mattermost-redux@github:mattermost/mattermost-redux#release-3.7",
+    "scope": null,
+    "escapedName": "mattermost-redux",
+    "name": "mattermost-redux",
+    "rawSpec": "github:mattermost/mattermost-redux#release-3.7",
+    "spec": "github:mattermost/mattermost-redux#release-3.7",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:mattermost/mattermost-redux.git#release-3.7",
+      "sshUrl": "git+ssh://git@github.com/mattermost/mattermost-redux.git#release-3.7",
+      "httpsUrl": "git+https://github.com/mattermost/mattermost-redux.git#release-3.7",
+      "gitUrl": "git://github.com/mattermost/mattermost-redux.git#release-3.7",
+      "shortcut": "github:mattermost/mattermost-redux#release-3.7",
+      "directUrl": "https://raw.githubusercontent.com/mattermost/mattermost-redux/release-3.7/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/mattermost/mattermost-redux.git#6e703d005941246a17e1ba0b3245e0a740620ed7",
+  "_shasum": "de384d5b849709ed5bca444421db8a42c80e7f20",
+  "_shrinkwrap": null,
+  "_spec": "mattermost-redux@github:mattermost/mattermost-redux#release-3.7",
+  "_where": "/Users/macbook/Downloads/mattermost-mobile-master",
+  "dependencies": {
+    "deep-equal": "1.0.1",
+    "harmony-reflect": "1.5.1",
+    "isomorphic-fetch": "2.2.1",
+    "mime-db": "1.27.0",
+    "redux": "3.6.0",
+    "redux-batched-actions": "0.1.5",
+    "redux-thunk": "2.2.0",
+    "reselect": "3.0.0",
+    "serialize-error": "^2.1.0"
+  },
+  "description": "**Supported Server Versions:** Master (no released versions are currently supported)",
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-eslint": "7.2.1",
+    "babel-plugin-module-resolver": "2.7.0",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-react-native": "1.9.1",
+    "babel-register": "6.24.0",
+    "chai": "3.5.0",
+    "deep-freeze": "0.0.1",
+    "eslint": "3.19.0",
+    "eslint-plugin-mocha": "4.9.0",
+    "fetch-mock": "5.9.4",
+    "form-data": "2.1.2",
+    "mocha": "3.2.0",
+    "remote-redux-devtools": "0.5.7",
+    "remote-redux-devtools-on-debugger": "0.7.0",
+    "ws": "2.2.3"
+  },
+  "gitHead": "6e703d005941246a17e1ba0b3245e0a740620ed7",
+  "name": "mattermost-redux",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# Mattermost Redux (unreleased) \n\n**Supported Server Versions:** Master (no released versions are currently supported) \n\nThis is an unreleased project for replacing the current implementation of the store with Redux. The project is not yet stable, and the instructions are for internal use currently (i.e. probably out-of-date until we stablize). \n\nWe'll post updates to our [Forums](http://forum.mattermost.org/) and [Twitter](https://twitter.com/mattermosthq) when we're ready to bring in more community contributors. \n\nMattermost is an open source Slack-alternative used by thousands of companies around the world in 11 languages. Learn more at https://mattermost.com.\n\n# How to Contribute\n\n### Contribute Code \n\nWe're not quite ready to accept external contributions yet - when things are ready, issues with a [Help Wanted] title will be posted in the [GitHub Issues section](https://github.com/mattermost/mattermost-mobile/issues).\n",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "check": "eslint --ext \".js\" --ignore-pattern node_modules --quiet .",
+    "postinstall": "npm run build && mv lib/* ./ && rm -rf src lib",
+    "test": "NODE_ENV=test mocha --opts test/mocha.opts"
+  },
+  "version": "0.0.1"
+}
